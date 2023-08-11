@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeWayPoint - Learn and Excel</title>
+
+    <script>
+        // JavaScript to handle the dropdown toggle
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButton = document.querySelector(".dropdown-button");
+            const dropdownContent = document.querySelector(".dropdown-content");
+
+            dropdownButton.addEventListener("click", function () {
+                dropdownContent.classList.toggle("hidden");
+            });
+        });
+    </script>
+
+</head>
+
+<body class="bg-gray-800">
+
+    <header class="bg-gray-900 py-4 sticky-nav">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-semibold">CodeWayPoint</a>
+            <nav>
+                <div class="dropdown relative inline-block">
+                    <button class="dropdown-button text-white mx-3 hover:text-gray-300 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content bg-white mt-2 p-2 hidden absolute z-10 shadow-md">
+                        <a href="#" class="block text-gray-800 hover:bg-gray-200 p-2">Home</a>
+                        <a href="#" class="block text-gray-800 hover:bg-gray-200 p-2">Courses</a>
+                        <a href="#" class="block text-gray-800 hover:bg-gray-200 p-2">About</a>
+                        <a href="#" class="block text-gray-800 hover:bg-gray-200 p-2">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl text-white font-semibold mb-4">Learn Software Development<br>to Your Best Potential</h1>
+            <p class="text-white text-lg mb-8">Unlock your programming skills with our comprehensive courses.</p>
+            <a href="#Courses"
+                class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">Get
+                Started
+            </a>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl text-white font-semibold mb-6">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl text-white font-semibold mb-4">Expert Instructors</h3>
+                    <p class="text-white">Learn from industry professionals with years of experience.</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl text-white font-semibold mb-4">Interactive Learning</h3>
+                    <p class="text-white">Engage with hands-on coding exercises and projects.</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <h3 class="text-xl text-white font-semibold mb-4">Flexible Schedule</h3>
+                    <p class="text-white">Learn at your own pace with our flexible course structure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20" id="Courses">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl text-white font-semibold mb-8"> Free Courses Offered</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Android Development -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="Android.jpeg" alt="Android Development" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Android-Development#readme"
+                            target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Android Development
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Learn to build Android apps using Java or Kotlin.</p>
+                </div>
+                <!-- iOS Development -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="ios.jpeg" alt="iOS Development" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/iOS-Development#readme"
+                            target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                iOS Development
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Master app development for iOS devices with Swift.</p>
+                </div>
+                <!-- Backend Development -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lgd">
+                    <img src="Backend.png" alt="Backend Development" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Backend-Development#readme"
+                            target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Backend Development
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Explore server-side development and APIs.</p>
+                </div>
+                <!-- Blockchain -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="Blockchain.jpeg" alt="Blockchain" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Blockchain#readme" target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Blockchain
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Learn about decentralized ledger technology.</p>
+                </div>
+                <!-- Data Science -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="Data.jpeg" alt="Data Science" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Data-Science#readme" target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Data Science
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Explore data analysis and machine learning.</p>
+                </div>
+                <!-- DevOps -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="DevOps.png" alt="DevOps" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/DevOps#readme" target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                DevOps
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Combine development and operations practices.</p>
+                </div>
+                <!-- DevRel -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="DevRel.png" alt="Developer Relations" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/DevRel#readme" target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Developer Relations
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Build strong developer communities.</p>
+                </div>
+                <!-- Flutter Development -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="Flutter.jpeg" alt="Flutter Development" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Flutter-Development#readme"
+                            target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Flutter Development
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Create cross-platform apps with Flutter.</p>
+                </div>
+                <!-- Frontend Development -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="Frontend.png" alt="Frontend Development" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Frontend-Development#readme"
+                            target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Frontend Development
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Craft interactive user interfaces.</p>
+                </div>
+                <!-- Fullstack Development -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="Fullstack.png" alt="Fullstack Development" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Fullstack-Development#readme"
+                            target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Fullstack Development
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Master both frontend and backend development.</p>
+                </div>
+                <!-- Open Source -->
+                <div class="bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg">
+                    <img src="OpenSource.jpeg" alt="Open Source" class="h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://github.com/WeMakeDevs/roadmaps/tree/main/Open-Source#readme" target="_blank">
+                            <button
+                                class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+                                Open Source
+                            </button>
+                        </a>
+                    </h3>
+                    <p class="text-white">Contribute to open-source projects.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 CodeWayPoint. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
